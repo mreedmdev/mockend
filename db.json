@@ -16,7 +16,7 @@
     },
     "nationality": "string",
     "number": "string",
-    "validated": "boolean",  
+    "validated": "boolean"  
 
   }
 }
