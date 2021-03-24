@@ -1,0 +1,22 @@
+{
+  "Passport": {
+    "dateOfBirth": "date",
+    "dateOfExpiration": "date",
+    "dateCurrent": "ddate",
+    "docType": "string",    
+    "expired": "boolean",
+    "gender": "string",
+    "id": "string",
+    "name": {
+      "first": "string",
+      "middle": "string",
+      "last": "string",
+      "title": "string",
+      "suffix": "string"
+    },
+    "nationality": "string",
+    "number": "string",
+    "validated": "boolean",  
+
+  }
+}
