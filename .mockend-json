@@ -1,22 +1,104 @@
 {
-  "Passport": {
-    "dateOfBirth": "date",
-    "dateOfExpiration": "date",
-    "dateCurrent": "ddate",
-    "docType": "string",    
-    "expired": "boolean",
-    "gender": "string",
-    "id": "string",
-    "name": {
-      "first": "string",
-      "middle": "string",
-      "last": "string",
-      "title": "string",
-      "suffix": "string"
-    },
-    "nationality": "string",
-    "number": "string",
-    "validated": "boolean",  
+	"PassengerData": {
+	  "type": "string",
+	  "successful: "boolean",
+	  "response": "string",
+	  "passengers": [
+		{
+		  "barcodeData": "BarcodePassenger",
+		  "passportData": "PassportData",
+		  "agreements": [
+			{
+				"agreement": "Agreement"
+			}
+		  ]
+		}
+	  ]
+	},
 
-  }
+	"BarcodePassenger": {
+	  "rawBarcode": "string",
+	  "barcodeFormat": "string",
+	  "versionNumber": "string",
+	  "numberOfSegments": "number",
+	  "name": "PaxName",
+	  "nameFull": "string",
+	  "nameFirst": "string",
+	  "nameLast": "string",
+	  "electronicTicketIndicator": "string",
+	  "passengerDescription": "string",
+	  "sourceOfCheckIn": "string",
+	  "sourceOfBoardingPassIssuance": "string",
+	  "dateOfIssueOfBoardingPass": "string",
+	  "dateOfIssueOfBoardingPassRaw": "string",
+	  "documentType": "string",
+	  "airlineDesginatorOfBoardingPassIssuer": "string",
+	  "baggageTagPlateNumbers": "string",
+	  "firstNonConsecutiveBaggageTagPlateNumber": "string",
+	  "secondNonConsecutiveBaggageTagPlateNumber": "string",
+	  "Flights": [
+		{
+		  "flights": "Flights"
+		}
+	  ]
+	  "BaggageTagList": [
+		{
+		  "TagNumber": "string",
+		}
+	  ]
+	  "typeOfSecurityData": "string",
+	  "securityData": "string",
+	},
+	
+	"Flights": {
+	  "operatingCarrierPNR": "string",
+	  "FromCityAirportCode": "string",
+	  "ToCityAirportCode": "string",
+	  "OperatingCarrier": "string",
+	  "FlightNumber": "string",
+	  "FlightDateJulian": "number",
+	  "FlightDate": "string",
+	  "CompartmentCode": "string",
+	  "SeatNumber": "string",
+	  "SequenceNumber": "number",
+	  "PassengerStatus": "number",
+	  "AirlineNumericCode": "string",
+	  "DocumentFormSerialNumber": "string",
+	  "SelecteeIndicator": "string",
+	  "InternationalDocumentVerification": "string",
+	  "MarketingCarrier": "string",
+	  "frequentFlyerTier": "string",
+	  "ID_AD_Indicator": "string",
+	  "FreeBaggageAllowance": "string",
+	  "ForAirlineUse": "string",
+	  "StarAllianceVersion": "string",
+	  "StarAllianceTier": "string",
+	},
+
+	"PassportData": {
+	  "issuingCountry": "string",
+	  "nationality": "string",
+	  "number": "string",
+	  "passportDataMrz": "string",
+	  "personalId": "string",
+	  "docType": "string",
+	  "currentDate": "string",
+	  "dateOfBirth": "string",
+	  "expirationDate": "string",
+	  "name": "PaxName",
+	},
+
+	"Agreement": {
+	  "name": "string",
+	  "text": "string",
+	  "manditory": "boolean",
+	},
+
+	"PaxName": {
+		"middle": "string",
+		"last": "string",
+		"title": "string",
+		"suffix": "string",
+		"first": "string",
+	}
 }
