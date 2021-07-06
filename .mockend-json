@@ -47,7 +47,7 @@
 		}
 	  ]
 	  "typeOfSecurityData": "string",
-	  "securityData": "string",
+	  "securityData": "string"
 	},
 	
 	"Flights": {
@@ -72,7 +72,7 @@
 	  "FreeBaggageAllowance": "string",
 	  "ForAirlineUse": "string",
 	  "StarAllianceVersion": "string",
-	  "StarAllianceTier": "string",
+	  "StarAllianceTier": "string"
 	},
 
 	"PassportData": {
@@ -85,13 +85,13 @@
 	  "currentDate": "string",
 	  "dateOfBirth": "string",
 	  "expirationDate": "string",
-	  "name": "PaxName",
+	  "name": "PaxName"
 	},
 
 	"Agreement": {
 	  "name": "string",
 	  "text": "string",
-	  "manditory": "boolean",
+	  "manditory": "boolean"
 	},
 
 	"PaxName": {
@@ -99,6 +99,6 @@
 		"last": "string",
 		"title": "string",
 		"suffix": "string",
-		"first": "string",
+		"first": "string"
 	}
 }
